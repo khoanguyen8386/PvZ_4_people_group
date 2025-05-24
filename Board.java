@@ -13,7 +13,7 @@ public class Board extends Actor
     public Plant[][] Board = new Plant[5][9]; 
     public static final int xOffset = 212;
     public static final int yOffset = 95;
-    public static final int xSpacing = 58;
+    public static final int xSpacing = 60;
     public static final int ySpacing = 72;
     
     
