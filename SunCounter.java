@@ -76,5 +76,10 @@ public class SunCounter extends Actor
         this.sun -= sun;
         updateText();
     }
-    
+    public void spawnRefundSun(int x, int y, int value) {
+        Sun refundSun = new Sun(value);
+        refundSun.setLocation(x, y);
+        MyWorld.addObject(refundSun, x, y);
+    }
+
 }

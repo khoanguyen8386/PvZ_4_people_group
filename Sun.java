@@ -18,10 +18,16 @@ public class Sun extends FallingObject
     public boolean beenClicked = false;
     public long lastFrame2 = System.nanoTime();
     public long deltaTime2 = System.nanoTime();
+    public int refundValue = 100;
+
     public Sun() {
         super(-3, 0.15, Random.Double(-100, 100), 0, 800L);
         sun = importSprites("sun", 2);
         
+    }
+    public Sun(int value) {
+        this();
+        this.refundValue = value;
     }
     public void update() {
         
@@ -33,7 +39,7 @@ public class Sun extends FallingObject
             if (checkClick()) {
                 beenClicked = true;
                 AudioPlayer.play(90, "points.mp3");
-                MyWorld.seedbank.suncounter.addSun(100);
+                MyWorld.seedbank.suncounter.addSun(refundValue);
                 
             } else {
                 if (deltaTime2 > 12000) {

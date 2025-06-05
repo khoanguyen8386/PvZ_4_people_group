@@ -11,4 +11,6 @@ comment4.params=sun
 comment4.target=void\ addSun(int)
 comment5.params=sun
 comment5.target=void\ removeSun(int)
-numComments=6
+comment6.params=x\ y\ value
+comment6.target=void\ spawnRefundSun(int,\ int,\ int)
+numComments=7

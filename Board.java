@@ -27,8 +27,15 @@ public class Board extends Actor
     }
     public void placePlant(int x, int y, Plant plant) {
         if (Board[y][x] == null) {
-            Board[y][x] = plant;    
+            Board[y][x] = plant; 
             World MyWorld = getWorld();
+
+            if (MyWorld instanceof MyWorld) {
+                SeedPacket selected = ((MyWorld)MyWorld).seedbank.selectedPacket;
+                if (selected != null) {
+                    plant.setSunCost(selected.sunCost);
+                }
+            }
             
             MyWorld.addObject(plant, x*xSpacing+xOffset, y*ySpacing+yOffset);
             AudioPlayer.play(80, "plant.mp3", "plant2.mp3");
@@ -39,9 +46,18 @@ public class Board extends Actor
         return Board[y][x];
     }
     public void removePlant(int x, int y) {
-        if (Board[y][x] != null) {
-            getWorld().removeObject(Board[y][x]);
-            Board[y][x] = null;    
+        Plant plant = Board[y][x];
+
+        if (plant != null) {
+            int refundAmount = plant.getSunCost() / 2;
+            World world = getWorld();
+
+            if (refundAmount > 0 && world instanceof MyWorld) {
+                Sun refundSun = new Sun(refundAmount);
+                world.addObject(refundSun, plant.getX(), plant.getY());
+            }
+            world.removeObject(plant);
+            Board[y][x] = null;
         }
         //plant.mp3 is not used for shovel???
         AudioPlayer.play(80,"plant2.mp3");

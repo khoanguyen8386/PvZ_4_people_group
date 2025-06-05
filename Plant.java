@@ -69,4 +69,14 @@ public class Plant extends animatedObject
         
     }
     
+    public int sunCost = 0;
+
+    public int getSunCost() {
+        return sunCost;
+    }
+
+    public void setSunCost(int cost) {
+        sunCost = cost;
+    }
+
 }

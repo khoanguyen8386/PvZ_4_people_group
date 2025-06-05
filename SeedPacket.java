@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class SeedPacket extends Actor
+public abstract  class SeedPacket extends Actor
 {
     /**
      * Act - do whatever the SeedPacket wants to do. This method is called whenever
@@ -141,4 +141,5 @@ public class SeedPacket extends Actor
     public Plant getPlant() {
         return null;
     }
+
 }
