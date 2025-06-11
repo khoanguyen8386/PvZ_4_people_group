@@ -11,6 +11,6 @@ public class TransparentPeashooter extends TransparentObject
     }
     public void act()
     {
-        // Add your action code here.
+       
     }
 }
