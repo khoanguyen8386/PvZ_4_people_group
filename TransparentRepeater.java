@@ -11,6 +11,6 @@ public class TransparentRepeater extends TransparentObject
     }
     public void act()
     {
-        // Add your action code here.
+       
     }
 }
