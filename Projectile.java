@@ -1,11 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-/**
- * Write a description of class Pea here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import greenfoot.*;
 
 public class Projectile extends animatedObject {
     public int speed = 4;
@@ -17,10 +10,7 @@ public class Projectile extends animatedObject {
     public int frameCount;
     public int yPos;
     public int damage;
-    /**
-     * Act - do whatever the Pea wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    
     public Projectile(String name, int frameCount, int yPos, int dmg, int speed) {
         this.frameCount = frameCount;
         this.image = importSprites(name, frameCount);
