@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; 
 import java.util.*;
 
 
@@ -21,10 +21,7 @@ public class Zombie extends animatedObject
     public boolean resetAnim = false;
     public boolean finalDeath = false;
     public boolean fixAnim = false;
-    /**
-     * Act - do whatever the Zombie wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    
     public Zombie() {
     
         headless = importSprites("zombieheadless", 7);
