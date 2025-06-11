@@ -1,17 +1,7 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; 
 
-/**
- * Write a description of class clickShovel here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class clickShovel extends SmoothMover
 {
-    /**
-     * Act - do whatever the clickShovel wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     MyWorld MyWorld;
     Plant lastPlant = null;
     
