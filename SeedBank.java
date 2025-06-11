@@ -1,18 +1,10 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 import java.util.*;
 
-/**
- * Write a description of class SeedBank here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class SeedBank extends Actor
 {
-    /**
-     * Act - do whatever the SeedBank wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    
    
     public MyWorld MyWorld;
     public SunCounter suncounter = new SunCounter();
@@ -52,7 +44,7 @@ public class SeedBank extends Actor
             
             if (Greenfoot.mouseClicked(null)) {
                 MyWorld.moveHitbox();
-                //Debug: System.out.println(mouse.getX()+" "+ mouse.getY());
+                
                 
                 if (image != null) {
                     if (mouse.getX() < x1 || mouse.getX() > x2 || mouse.getY() < y1 || mouse.getY() > y2) {
