@@ -1,23 +1,11 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-/**
- * Write a description of class GameOver here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import greenfoot.*; 
 public class GameOver extends World
 {
-
-    /**
-     * Constructor for objects of class GameOver.
-     * 
-     */
     Hitbox hitbox = new Hitbox();
     
     public GameOver(World restart)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+
         super(733, 430, 1, false); 
         
         addObject(hitbox,0,0);
