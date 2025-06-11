@@ -1,17 +1,7 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-/**
- * Write a description of class RepeaterPacket here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import greenfoot.*;  
 public class RepeaterPacket extends SeedPacket
 {
-    /**
-     * Act - do whatever the RepeaterPacket wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+   
     public RepeaterPacket() {
         super(11000L, true, 225, "repeaterpacket");
         
