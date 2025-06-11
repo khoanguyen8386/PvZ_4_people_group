@@ -50,7 +50,7 @@ public class WaveManager extends Actor
         MyWorld.addObject(new ReadySetPlant(), 400, 230);
     }
     
-    //Fix order cause no setPaintOrder for actors :(
+    
     public void fixOrder() {
        
         List<Zombie> zombies = MyWorld.getObjects(Zombie.class);
@@ -160,7 +160,7 @@ public class WaveManager extends Actor
                 }
             } else {
                 
-                //If more then 1 zombie per row, delay depending on how many
+                
                 if (wave[i] != null) {
                     finishedSending = false;
                     int wait = (int)(i/5);
@@ -181,14 +181,14 @@ public class WaveManager extends Actor
         for (int i = 0; i < wave.length; i++) {
             if (i < 5) {
                 if (wave[i]!=null) {
-                    //Send!
+                    
                     
                     MyWorld.addObject(wave[i], xOffset+50, (i%5)*ySpacing+yOffset);
                     zombieRow.get(i%5).add(wave[i]);
                 }
             } else {
                 
-                //If more then 1 zombie per row, delay depending on how many
+              
                 if (wave[i] != null) {
                     finishedSending = false;
                     int wait = (int)(i/5);
