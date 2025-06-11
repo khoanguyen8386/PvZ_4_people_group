@@ -1,11 +1,6 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 
-/**
- * Write a description of class SunCounter here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class SunCounter extends Actor
 {
     public static final int x = 120;
@@ -15,11 +10,7 @@ public class SunCounter extends Actor
     public long currentFrame = System.nanoTime();
     public long lastFrame = System.nanoTime();
     public long deltaTime;    
-    /**
-     * Act - do whatever the SunCounter wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    
+  
     MyWorld MyWorld;
     
     public void act()
@@ -31,7 +22,7 @@ public class SunCounter extends Actor
             lastFrame = System.nanoTime();
         }
         
-        // Add your action code here.
+      
     }
     
     public void addedToWorld(World world) {
@@ -64,7 +55,7 @@ public class SunCounter extends Actor
             } else {
                 
                 
-                //Nothing
+             
             }
         }
     }
