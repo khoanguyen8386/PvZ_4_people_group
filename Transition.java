@@ -1,17 +1,7 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-/**
- * Write a description of class Transition here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import greenfoot.*;  
 public class Transition extends Actor
 {
-    /**
-     * Act - do whatever the Transition wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+   
     public World world;
     public boolean fadeOut = false;
     public boolean startFade = false;
@@ -63,7 +53,7 @@ public class Transition extends Actor
             }
         }
         
-        // Add your action code here.
+       
     }
     public void changeWorld() { 
 
