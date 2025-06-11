@@ -1,26 +1,11 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-/**
- * Write a description of class Board here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import greenfoot.*;
 public class Board extends Actor
 {
-    
-     // instance variables - replace the example below with your own
     public Plant[][] Board = new Plant[5][9]; 
     public static final int xOffset = 212;
     public static final int yOffset = 95;
     public static final int xSpacing = 60;
     public static final int ySpacing = 72;
-    
-    
-    
-    /**
-     * Constructor for objects of class Board
-     */
     public Board()
     {
         
@@ -59,7 +44,6 @@ public class Board extends Actor
             world.removeObject(plant);
             Board[y][x] = null;
         }
-        //plant.mp3 is not used for shovel???
         AudioPlayer.play(80,"plant2.mp3");
     }
     
@@ -75,11 +59,6 @@ public class Board extends Actor
         }
         
     }
-    
-    /**
-     * Act - do whatever the Board wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act()
     {
         
