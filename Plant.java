@@ -1,11 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
-/**
- * Write a description of class Plant here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import greenfoot.*;  
 public class Plant extends animatedObject
 {
     public int maxHp;
@@ -15,13 +8,7 @@ public class Plant extends animatedObject
     public boolean opaque = false;
     public MyWorld MyWorld;
  
-    public Plant() {
-        
-    }
-    /**
-     * Act - do whatever the Plant wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    public Plant() {}
     public void act()
     {
         if (getWorld() != null) {
