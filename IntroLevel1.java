@@ -1,12 +1,6 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 import java.util.*;
 
-/**
- * Write a description of class IntroLevel1 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class IntroLevel1 extends World
 {
     public GreenfootSound CYS = new GreenfootSound("chooseyourseeds.mp3");
@@ -67,10 +61,7 @@ public class IntroLevel1 extends World
     }
     public void bgScrollAnimate()
     {
-        if (count == 100 )
-        {
-            //removeObject(message);
-        }
+        if (count == 100 ) {}
         if ( count > 100 && count < 160)
         {
             location -= scrollSpeed;
@@ -104,7 +95,6 @@ public class IntroLevel1 extends World
         GreenfootImage move = new GreenfootImage("lawn2.png");
         bg.drawImage(move, offset, 0);  
         
-        // get all objects and move them by the offset delta value
         List<Actor> currentObjects = getObjects(null);
         
         for ( Actor thisObject : currentObjects )
