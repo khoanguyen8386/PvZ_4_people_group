@@ -1,11 +1,6 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.util.*; //HAHAHADIE
-/**
- * Write a description of class WaveManager here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import greenfoot.*;  
+import java.util.*;
+
 public class WaveManager extends Actor
 {
     public long currentFrame = System.nanoTime();
