@@ -90,7 +90,7 @@ public class SeedPacket extends Actor
             setRecharged(false);        
         }
         
-        // Add your action code here.
+      
     }
     public void startRecharge() {
         lastFrame = currentFrame;
