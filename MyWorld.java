@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 import java.util.*;
 
 public class MyWorld extends World
@@ -99,7 +99,6 @@ public class MyWorld extends World
 
     public MyWorld(GreenfootSound CYS, WaveManager level,  SeedBank seedbank, World restartWorld, FallingObject winPlant)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(733, 430, 1, false); 
         this.CYS = CYS;
         this.seedbank = seedbank;
