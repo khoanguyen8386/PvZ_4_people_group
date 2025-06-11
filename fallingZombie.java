@@ -27,6 +27,5 @@ public class fallingZombie extends animatedObject
                 getImage().setTransparency(getImage().getTransparency()-3);
             }
         }
-        // Add your action code here.
     }
 }
