@@ -1,12 +1,6 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  
 import java.util.*;
 
-/**
- * Write a description of class IntroLevel3 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class IntroLevel3 extends World
 {
     public GreenfootSound CYS = new GreenfootSound("chooseyourseeds.mp3");
@@ -78,10 +72,7 @@ public class IntroLevel3 extends World
     }
     public void bgScrollAnimate()
     {
-        if (count == 100 )
-        {
-            //removeObject(message);
-        }
+        if (count == 100 ) {}
         if ( count > 100 && count < 160)
         {
             location -= scrollSpeed;
@@ -136,9 +127,7 @@ public class IntroLevel3 extends World
             else if ( count > 350 && count < 410)
             {
                 thisObject.setLocation(thisObject.getX() + scrollSpeed , thisObject.getY() );
-            } // end inner if/else
-            
-        } // end for-each loop
-        
+            } 
+        } 
     }
 }
