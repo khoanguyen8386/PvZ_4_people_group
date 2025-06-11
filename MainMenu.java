@@ -1,16 +1,10 @@
 import greenfoot.*;  
-/**
- * Write a description of class MainMenu here.
- * 
- * @author Quang 
- */
 public class MainMenu extends World
 {
     Hitbox hitbox = new Hitbox();
     GreenfootSound menutheme = new GreenfootSound("menutheme.mp3");
     public MainMenu(GreenfootSound menutheme)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(576, 430, 1, false); 
         addObject(hitbox,0,0);
         addObject(new Start(), 412, 132);
