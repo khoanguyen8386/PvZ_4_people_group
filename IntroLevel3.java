@@ -115,7 +115,6 @@ public class IntroLevel3 extends World
         GreenfootImage move = new GreenfootImage("lawn2.png");
         bg.drawImage(move, offset, 0);  
         
-        // get all objects and move them by the offset delta value
         List<Actor> currentObjects = getObjects(null);
         
         for ( Actor thisObject : currentObjects )
